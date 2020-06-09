@@ -1,0 +1,102 @@
+body,html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:black;
+}
+
+.img1, .img2, .img3 ,.img4{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+.img1border{
+    color:black;
+    font-size: 50px;
+}
+.img1{
+  background-image:url('https://static.archiesonline.com/public/images/product/large/Happy_Birthday_Choco_Cake_PRCAKE139_70abbd2d.jpg');
+  min-height:100%;
+}
+
+.img2{
+  background-image:url('https://m.media-amazon.com/images/I/91iNI5oc6WL._SR500,500_.jpg');
+  min-height:400px;
+}
+
+.img3{
+  background-image:url('https://lovefoodies.com/wp-content/uploads/2015/05/Pound-Cake-Ingredients.jpg');
+  min-height:400px;
+}
+.img4{
+  background-image:url('https://boip.in/32968-large_default/philips-hd6975-00-25-litre-digital-oven-toaster-grill-grey.jpg');
+  min-height:400px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+
+ul{
+    list-style: none;
+}
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.img1text,.img2text,.img3text{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.img1text .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+.img2text .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+.img3text .border{
+  background-color:#111;
+  color:purple;
+  padding:20px;
+}
+
+.img1text .border.trans{
+  background-color:transparent;
+}
+.img2text .border.trans{
+  background-color:transparent;
+}
+.img3text .border.trans{
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .img1, .img2, .img3{
+    background-attachment:scroll;
+  }
+}
